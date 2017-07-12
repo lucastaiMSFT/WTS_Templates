@@ -18,12 +18,12 @@
                 </Grid.RowDefinitions>
 
                 <TextBlock 
-                    Tag="{x:Bind HashIdentTitle}"
                     Text="{x:Bind OrderId}" 
                     Style="{StaticResource ListTitleStyle}" />
 
                 <TextBlock
                     Grid.Row="1"
+                    Tag="{x:Bind HashIdentTitle}"
                     Text="{x:Bind Company}"
                     Style="{StaticResource ListSubTitleStyle}" />
 
