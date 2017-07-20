@@ -14,6 +14,7 @@ namespace Param_ItemNamespace.Views
             set
             {
                 SetValue(MasterMenuItemProperty, value);
+                ConnectedAnimationService.GetForCurrentView().DefaultDuration = System.TimeSpan.FromSeconds(.25);
                 ConnectedAnimation heroAnim = ConnectedAnimationService.GetForCurrentView().GetAnimation("hero");
                 ConnectedAnimation titleAnim = ConnectedAnimationService.GetForCurrentView().GetAnimation("title");
                 if (!(heroAnim == null) && !(titleAnim == null))
